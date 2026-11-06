@@ -1,0 +1,6 @@
+pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+plugins { id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0" }
+dependencyResolutionManagement { repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS); repositories { google(); mavenCentral() } }
+rootProject.name = "VoiceStudioMobile"
+include(":app", ":core:designsystem", ":core:network", ":core:data", ":core:l10n", ":features")
+
